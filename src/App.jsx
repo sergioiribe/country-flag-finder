@@ -12,15 +12,13 @@ export const App = () => {
 
   return (
 
-    <Router basename="/country-flag-finder"> 
-    <div className={`min-w-[100vw] min-h-[100vh] ${darkMode ? 'bg-dark' : 'bg-gray-100'}`}>
+      <div className={`min-w-[100wv] min-h-[100hv] ${darkMode ? 'bg-dark' : 'bg-gray-100'}`}>
      <Routes>
-        <Route path="/" element={<Home/>}></Route>
-        <Route path="/country/:countryName" element={<CountryDetails/>}></Route>
-        <Route path="*" element={<h1 className='p-5'>Page no found</h1>}></Route>
+        <Route path={import.meta.env.BASE_URL + "/"} element={<Home/>}></Route>
+        <Route path= {import.meta.env.BASE_URL + "/country/:countryName"} element={<CountryDetails/>}></Route>
+        <Route path={import.meta.env.BASE_URL + "*"} element={<h1 className='p-5'>Page no found</h1>}></Route>
     </Routes>
     </div>
-  </Router>
     
   )
 }

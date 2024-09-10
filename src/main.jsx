@@ -10,7 +10,7 @@ import { DarkModeProvider } from './DarkModeContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <DarkModeProvider>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <StrictMode>
         <App/>
       </StrictMode>
