@@ -2,16 +2,19 @@ import './App.css'
 import {Nav} from './Nav'
 import {Card} from './Card'
 import {SearchBar} from './SearchBar'
-
+import { SearchContext, SearchProvider } from './searchContext'
+import { useContext } from 'react'
 
 function Home() {
   
 
   return (
-    <div>
+    <div className='flex flex-col min-h-screen min-w-screen'>
       <Nav/>
-      <SearchBar/>
-      <Card/>
+      <SearchProvider>
+        <SearchBar/>
+        <Card/>
+      </SearchProvider>
     </div>
   )
 }

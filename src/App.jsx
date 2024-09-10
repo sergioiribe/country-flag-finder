@@ -15,7 +15,7 @@ export const App = () => {
       <div className={`min-w-[100wv] min-h-[100hv] ${darkMode ? 'bg-dark' : 'bg-gray-100'}`}>
      <Routes>
         <Route path="/" element={<Home/>}></Route>
-        <Route path="/country" element={<CountryDetails/>}></Route>
+        <Route path="/country/:countryName" element={<CountryDetails/>}></Route>
         <Route path="*" element={<h1 className='p-5'>Page no found</h1>}></Route>
     </Routes>
     </div>
