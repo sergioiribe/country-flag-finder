@@ -3,6 +3,7 @@ import {Nav} from './Nav'
 import {Card} from './Card'
 import {SearchBar} from './SearchBar'
 
+
 function Home() {
   
 
