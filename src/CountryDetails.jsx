@@ -25,11 +25,11 @@ export const CountryDetails = () => {
     }, [])
 
     return (
-        <div className={`bg-gray-100  min-h-[100svh] w-[100] ${darkMode ? `bg-dark` : `md:bg-white`}`}>
+        <div className={`  min-h-[100svh] w-[100] ${darkMode ? `bg-dark` : `bg-gray-100 md:bg-white`}`}>
             <Nav />
             <div className={`border-2 shadow-md  ${darkMode ? `border-dark`: `border-gray-100`}`}></div>
             <div className="w-[90%] mt-5 m-auto md:mt-[4%]">
-                <div className={`py-2 bg-white w-[35%] md:w-[10%] rounded-md shadow-lg flex justify-center items-center ${darkMode ? `bg-darklight`: `bg-white`}`}>
+                <div className={`py-2  w-[35%] md:w-[10%] rounded-md shadow-lg flex justify-center items-center ${darkMode ? `bg-darklight`: `bg-white`}`}>
                     <button className={`flex gap-3 items-center `}>
                         <FaArrowLeftLong className={`${darkMode ? `text-white`: `text-black`}`}/>
                         <Link to="/" className={`${darkMode ? `text-white`: `text-black`}`}>Back</Link>
