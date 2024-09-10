@@ -76,7 +76,7 @@ export const Card = ({ country }) => {
                     <Link
                     to={`/country/${country.name.common}`}  // Redirige a la página de detalles del país
                     key={index}
-                    className={`w-[250px] flex justify-center flex-col rounded-xl shadow-xl ${darkMode ? 'bg-darklight' : 'bg-white'}`}
+                    className={`w-[80%] md:w-[250px] flex justify-center flex-col rounded-xl shadow-xl ${darkMode ? 'bg-darklight' : 'bg-white'}`}
                   >
                     <div className='md:min-h-[150px]'>
                       <img className={`rounded-t-xl`} src={country.flags.svg} alt={`${country.name.common} flag`} />
